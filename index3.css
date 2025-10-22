@@ -1,0 +1,17 @@
+#main {
+  display: flex;
+  flex-direction: row;
+  background-color: #fbf7e3;
+  color: #5c1d01;
+  border-radius: 25px;
+}
+
+#testo {
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+img {
+  margin: 15px;
+}
