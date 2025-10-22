@@ -1,0 +1,63 @@
+/* rendo main un contenitore flessibile in modo da affiancare le cards */
+
+.card {
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* fissiamo una larghezza */
+
+  width: 300px;
+
+  border: 1px solid black;
+
+  /* già per organizzare immagine sopra e testo sotto utilizzo flex */
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+.card > div {
+  padding: 1em;
+
+  /* lo voglio rendere in grado di toccare il fondo della card */
+
+  flex-grow: 1;
+
+  /* rendo il div a sua volta un contenitore flessibile in modo
+
+
+  da poter organizzare gli elementi come flex-children */
+
+  display: flex;
+
+  /* inverto la direction perchè voglio gli elementi sempre incolonnati */
+
+  flex-direction: column;
+}
+
+.card > div > p {
+  /* ingrandendo lo spazio dedicato al paragrafo spingeremo sempre
+
+
+    in fondo il bottone */
+
+  flex-grow: 1;
+}
+
+.card button {
+  width: 100%;
+
+  background-color: grey;
+
+  color: white;
+
+  border: 1px solid grey;
+
+  padding: 0.5em 0;
+}
+
+.card h3 {
+  font-weight: bold;
+
+  margin: 0;
+}
